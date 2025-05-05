@@ -1,0 +1,241 @@
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    position: fixed;
+    background-color: #0D1326;
+    right: 0;
+    width: 90px;
+    top: 80px;
+    border-radius: 5px;
+    color: #6a5c5c;
+    z-index: 99999;
+
+}
+
+.side-bar-section {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    flex-direction: column;
+
+}
+body {
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  }
+  
+  .heading, .price-heading {
+    margin: 0;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    color: rgb(47, 43, 43);
+    margin-top: 40px;
+  }
+  
+  .heading {
+    font-size: 40px;
+    padding: 0 20px;
+  }
+  
+  .plans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 35px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .price-plan:hover {
+    transform: translateY(-20px);
+}
+
+  .price-plan {
+    transition: 0.5s;
+    background-color: white;
+    color: white;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    height: auto;
+    min-height: 400px;
+    font-size: 30px;
+    border: 3px solid #dfdbdb;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  
+  #brilliant {
+    border: 3px solid #47bb62;
+    min-height: 475px;
+    position: relative;
+  }
+  
+  .price-subheading {
+    color: rgb(21 27 43 / 70%);
+    font-size: 15px;
+    margin: 10px;
+    font-weight: 500;
+  }
+  
+  .trial-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    position: relative;
+  }
+  
+  .trial-banner span {
+    background: white;
+    padding: 4px 14px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #0cb650;
+  }
+  
+  .trial-side {
+    background-color: #ccc;
+    height: 1px;
+    width: 30px;
+  }
+  
+  .text-details, .text-details p {
+    color: rgb(21 27 43 / 70%);
+    text-align: left;
+    margin: 15px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .text-arrows {
+    color: #0cb650;
+  }
+  
+  .get-started {
+    margin: 0;
+    margin-top: auto;
+    width: 100%;
+    height: 40px;
+    padding: 10px 0;
+  }
+  
+  .get-started button {
+    height: 100%;
+    width: 140px;
+    border: none;
+    color: #47bb62;
+    background-color: #f1f1f1;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #brilliant-start button {
+    background-color: #0cb650;
+    color: #f1f1f1;
+  }
+  
+  #rights-reserved {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .corner-star {
+    position: absolute;
+    background-color: #47bb62;
+    color: white;
+    font-size: 18px;
+    padding: 8px;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    top: -3px;
+    left: -3px;
+    width: 50px;
+    height: 50px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 3px;
+  }
+
+  @media (max-width: 1024px) {
+    .plans {
+      padding: 20px;
+    }
+    
+    .price-plan {
+      width: 280px;
+    }
+  }
+  
+  @media (max-width: 960px) {
+
+    .plans {
+      justify-content: center;
+    }
+    
+    .price-plan {
+      width: 45%;
+      max-width: 350px;
+      margin: 10px;
+    }
+    
+    .heading {
+      font-size: 36px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+
+    .plans {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .price-plan {
+      width: 90%;
+      max-width: 400px;
+      margin: 15px 0;
+    }
+    
+
+    
+    .heading {
+      font-size: 30px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .heading {
+      font-size: 26px;
+    }
+    
+    .price-heading {
+      font-size: 28px;
+    }
+    
+    .text-details, .text-details p {
+      font-size: 14px;
+    }
+    
+    .get-started button {
+      width: 120px;
+      font-size: 16px;
+    }
+  }

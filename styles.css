@@ -32,8 +32,8 @@ body {
   .heading, .price-heading {
     margin: 0;
     text-align: center;
-    font-size: 35px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 600;
     color: rgb(47, 43, 43);
     margin-top: 40px;
   }
@@ -41,6 +41,7 @@ body {
   .heading {
     font-size: 40px;
     padding: 0 20px;
+    font-weight: 500;
   }
   
   .plans {
@@ -48,7 +49,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 35px 20px;
+    padding: 25px 20px;
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -60,14 +61,14 @@ body {
     transition: 0.5s;
     background-color: white;
     color: white;
-    width: 300px;
+    width: 310px;
     margin: 10px;
     text-align: center;
     height: auto;
-    min-height: 400px;
+    min-height: 350px;
     font-size: 30px;
     border: 3px solid #dfdbdb;
-    border-radius: 5px;
+    border-radius: 7px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -104,7 +105,6 @@ body {
     font-size: 14px;
     color: #0cb650;
   }
-  
   .trial-side {
     background-color: #ccc;
     height: 1px;
@@ -150,10 +150,11 @@ body {
   
   #rights-reserved {
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 20px;
+    margin-top: 0;
   }
   
   .corner-star {
@@ -171,12 +172,15 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    border-radius: 3px;
+    border-radius: 7px;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1049px) {
     .plans {
       padding: 20px;
+    }
+    .side-bar {
+        display: none;
     }
     
     .price-plan {
@@ -201,7 +205,7 @@ body {
     }
   }
   
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
 
     .plans {
       flex-direction: column;
@@ -214,7 +218,7 @@ body {
       margin: 15px 0;
     }
     
-
+  
     
     .heading {
       font-size: 30px;
